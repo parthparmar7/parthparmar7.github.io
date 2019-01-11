@@ -2,4 +2,4 @@
 
 My portfolio website. 
 
-URL: parthparmar.me
+URL: https://www.parthparmar.me
