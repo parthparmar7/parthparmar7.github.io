@@ -1,6 +1,6 @@
 body {
   background-color: #f2f2f2;
-  font-family: "Montserrat"; /* OPTIONAL: Google Fonts - base font */
+  font-family: "Montserrat"; 
   font-weight: 500;
   font-size: 16px;
   color: #555;
@@ -11,8 +11,7 @@ body {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto Mono"; /* OPTIONAL: Google Fonts - title font */
-  font-weight: 300;
+  font-family: "Roboto Mono"; 
   color: #333;
 }
 
