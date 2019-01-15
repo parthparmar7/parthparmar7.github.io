@@ -1,8 +1,8 @@
 
 .arrow {
   box-sizing: border-box;
-  height: 5vw;
-  width: 5vw;
+  height: 4vw;
+  width: 4vw;
   border-style: solid;
   border-color: #fff;
   border-width: 0px 1px 1px 0px;
@@ -22,5 +22,5 @@
 }
 
 .container3{
-  height: 15vw;
+  height: 12vw;
 }

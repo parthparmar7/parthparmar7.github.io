@@ -99,7 +99,11 @@ svg {
   color: white;
   background: rgba(0,0,0,0.2);
 }
-
+.dot{
+  font-size: 60px;
+  color: white;
+  height: 5vh;
+}
 .header h3 {
   font-size: 20px;
   color: white;
