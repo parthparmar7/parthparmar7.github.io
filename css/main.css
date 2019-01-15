@@ -133,8 +133,7 @@ svg {
 
 /* social icons: */
 .footer i {
-  padding-right: 8px;
-  /*color: #1abc9c;*/
+  padding-right: 18px;
 }
 
 /* Global Values */
@@ -175,9 +174,7 @@ sm {
   margin-bottom: 10px;
 }
 
-/* define some CSS3 animations: */
 body {
-  /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
   -webkit-backface-visibility: hidden;
 }
 
