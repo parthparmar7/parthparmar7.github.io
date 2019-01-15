@@ -10,46 +10,51 @@
 	    <link rel="shortcut icon" href="p2.png">
 	    <link rel="apple-touch-icon" href="icon.png" />
 	   <title>Parth Parmar</title>
+	   		<link rel="stylesheet" type="text/css" href="css/scroll.css">
 		    <link href="css/bootstrap.css" rel="stylesheet">
 		    <link rel="stylesheet" href="css/font-awesome.min.css">
 		    <link href="css/main.css" rel="stylesheet">
 		  	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Mono:400,700" rel="stylesheet">
-			<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">	 
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>	 
 
 	</head>
 	 <body>
 	 	<div class="fadeInUp animated">
-		   <div class="header" id="headerwrap">
+		   <div class="header" >
 		     <div class="container">
 		       <div class="row centered">
 		         <div class="col-lg-12">
+
 		           <h1 class="fadeInUp animated">Parth Parmar</h1>
 		           <h3>Back-end Developer | 
 		            <a href="mailto:parthparmar7@gmail.com">parthparmar7@gmail.com</a>
 		           </h3>
 		         </div>
-		       </div>
-		     </div>
-		   </div>
+				<br><br><br>
 
-		 <section id="about" name="about"></section>
-		 <div class="container desc">
-		   <div class="container">
-		     <div class="row"> 
-		       <div class="col-lg-2 col-lg-offset-1">
-		         <h5>ABOUT</h5>
-		       </div>
-		       <div class="col-lg-6">
-		<p>I am a final year engineering student pursuing my Bachelor's Degree in Computer Science. My main areas of interest are Javascript, Nodejs, MongoDB, Java and JSP.</p>
+		         <div class="col-lg-12">
+		         	<p class="about">I am a final year engineering student pursuing my Bachelor's Degree in Computer Science. My main areas of interest are Javascript, Nodejs, MongoDB, Java and JSP.</p>
+		         	<imp><a href="resume.pdf" target="_blank"><i class="icon-file"></i> <sm>My Resume</sm></a></imp>
+		         </div>
+		     <br><br>
+		      <div class="container2">
+		  <a data-scroll href="#main">
+		    <div class="arrow"></div>
+		  </a>
 		</div>
-		       <div class="col-lg-3">
-		         <imp><a href="resume.pdf" target="_blank"><i class="icon-file"></i> <sm>My Resume</sm></a></imp>
-		       </div>
-		 
-		     </div>
-		   </div>
-		 </div>
 
+		<div class="container2">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    	<polygon fill="#f2f2f2" points="0,100 100,0 100,100"/>
+  		</svg>
+		</div>
+		<div class="container3"></div>
+		</div>
+		 </div>     
+		</div>
+		
+		<section id="main" name="main">
 		 <!-- WORK EXP -->
 		 <section id="resume" name="resume"></section>
 		<!-- WORK SECTION -->
@@ -185,9 +190,7 @@
 				<br>
 				<hr>
 			</div>
-			
-
-			<section id="contact" name="contact"></section>
+			</section>
 	<!--FOOTER DESCRIPTION -->
 	<div id="footwrap" class="footer">
 		<div class="container">
@@ -219,6 +222,38 @@
 			</div>
 		</div>
 	</div>
-			</div>
+</div>
+			<script type="text/javascript">
+		$('a[href*="#"]')
+		  .not('[href="#"]')
+		  .not('[href="#0"]')
+		  .click(function(event) {
+		    // On-page links
+		    if (
+		      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+		      && 
+		      location.hostname == this.hostname
+		    ) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		      if (target.length) {
+		        event.preventDefault();
+		        $('html, body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000, function() {
+		    
+		          var $target = $(target);
+		          $target.focus();
+		          if ($target.is(":focus")) { 
+		            return false;
+		          } else {
+		            $target.attr('tabindex','-1'); 
+		            $target.focus(); 
+		          };
+		        });
+		      }
+		    }
+		  });
+			</script>
 </body>
 </html>
