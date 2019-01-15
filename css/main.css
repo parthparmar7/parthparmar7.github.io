@@ -148,9 +148,10 @@ svg {
   font-weight: 700;
 }
 
-imp {
+.desc imp {
   padding: 6px;
-  color: white;
+  color: #fff;
+  background: #34495e;
 }
 
 .desc more {
