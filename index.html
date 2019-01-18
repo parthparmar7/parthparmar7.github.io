@@ -1,6 +1,15 @@
 	<!DOCTYPE html>
 	<html lang="en">
 	 <head>
+	 	UA-132745487-1
+		<script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-132745487-1');
+		</script>
 	 <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
 	    <!-- OPTIONAL: description -->
@@ -50,9 +59,9 @@
 		         </div>
 		     <br><br>
 		      <div class="container2">
-		  <a data-scroll href="#main">
+		  
 		    <div class="arrow"></div>
-		  </a>
+		  
 		</div>
 
 		<div class="container2">
@@ -65,7 +74,7 @@
 		 </div>     
 		</div>
 		
-		<section id="main" name="main">
+		<section class="main" name="main">
 		 <!-- WORK EXP -->
 		<!-- WORK SECTION -->
 			<div class="container desc">
@@ -228,43 +237,37 @@
 						<a href="https://www.linkedin.com/in/parthparmar7/" target="_blank"><i class="icon-linkedin"></i></a>
 					</p>
 
-					<p style="color: #A0A0A0">&copy; 2019 : Parth Parmar</p>
+						<p style="color: #A0A0A0">&copy; 2019 : Parth Parmar</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-			<script type="text/javascript">
-		$('a[href*="#"]')
-		  .not('[href="#"]')
-		  .not('[href="#0"]')
-		  .click(function(event) {
-		    // On-page links
-		    if (
-		      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-		      && 
-		      location.hostname == this.hostname
-		    ) {
-		      var target = $(this.hash);
-		      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-		      if (target.length) {
-		        event.preventDefault();
-		        $('html, body').animate({
-		          scrollTop: target.offset().top
-		        }, 1000, function() {
-		    
-		          var $target = $(target);
-		          $target.focus();
-		          if ($target.is(":focus")) { 
-		            return false;
-		          } else {
-		            $target.attr('tabindex','-1'); 
-		            $target.focus(); 
-		          };
-		        });
-		      }
-		    }
-		  });
+					<script type="text/Javascript">
+			$(document).ready(function(){
+			  // Add smooth scrolling to all links
+			  $(".arrow").on('click', function(event) {
+
+			    // Make sure this.hash has a value before overriding default behavior
+			    if (this.hash !== "") {
+			      // Prevent default anchor click behavior
+			      event.preventDefault();
+
+			      // Store hash
+			      var hash = this.hash;
+
+			      // Using jQuery's animate() method to add smooth page scroll
+			      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			      $('html, body').animate({
+			        scrollTop: $(hash).offset().top
+			      }, 800, function(){
+			   
+			        // Add hash (#) to URL when done scrolling (default click behavior)
+			        window.location.hash = hash;
+			      });
+			    } // End if
+			  });
+			});
 			</script>
 </body>
 </html>

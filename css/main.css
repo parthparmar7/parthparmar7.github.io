@@ -304,7 +304,6 @@ body {
 }
 
 .arrow {
-  box-sizing: border-box;
   height: 4vw;
   width: 4vw;
   border-style: solid;
