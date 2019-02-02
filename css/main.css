@@ -1,5 +1,5 @@
 body {
-  background-color: #f2f2f2;
+  background-color: white;
   font-family: "Montserrat"; 
   font-weight: 500;
   font-size: 16px;
@@ -14,7 +14,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Ubuntu"; 
   color: #333;
 }
+.a1{
+  color: #A9A9A9;
 
+}
 /* Paragraph & Typographic */
 p {
   line-height: 28px;
@@ -299,7 +302,7 @@ body {
 }
 
 ::selection {
-  color: #f2f2f2;
+  color: #E0E0E0;
   background: #34495e;
 }
 
